@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/Layin"
+    android:background="#7DDFE8"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <TableRow>
+        <TextView android:text="NOMBRE:" android:textAlignment="textEnd" android:textColor="@color/black"/>
+        <EditText android:ems="12" android:id="@+id/nombrecompleto"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="DOMICILIO" android:textAlignment="textEnd" android:textColor="@color/black"/>
+        <EditText android:id="@+id/domicilio"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="TELEFONO" android:textAlignment="textEnd" android:textColor="@color/black"/>
+        <EditText android:id="@+id/telefono" android:inputType="phone"/>
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="FECHA" android:textAlignment="textEnd" android:textColor="@color/black"/>
+        <EditText android:id="@+id/fecha" android:inputType="date"/>
+    </TableRow>
+
+    <TableRow android:layout_marginTop="40dp" android:paddingHorizontal="40dp">
+        <Button android:text="Guardar" android:id="@+id/guardar" android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow android:paddingHorizontal="40dp">
+        <Button android:text="Leer" android:id="@+id/leer" android:layout_weight="1"/>
+    </TableRow>
+
+</TableLayout>
